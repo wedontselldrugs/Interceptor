@@ -1,0 +1,25 @@
+[package]
+authors = ["wedontselldrugs"]
+name = "Interceptor"
+version = "0.1.0"
+edition = "2021"
+description = "Interceptor is a Windows terminal tool made for game-network testing"
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "interceptor"
+path = "src/main.rs"
+
+[dependencies]
+crossterm = "0.29.0"
+ratatui = "0.30.0"
+serde_json = "1.0.150"
+semver = "1"
+ureq = "2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

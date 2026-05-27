@@ -1,0 +1,9 @@
+/donotship/
+/.claude/
+/target/
+/lib/
+/dist/
+*.exe
+*.dll
+*.sys
+*.pdb
